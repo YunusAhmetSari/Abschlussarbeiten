@@ -27,18 +27,18 @@ Zur Bewertung der Lichtfeldkamera wurde ein vollständig automatisierter Compute
 - **Verwendung von Regions of Interest (ROI):** Automatische Festlegung und Auswertung von relevanten Bildbereichen (ROI) auf Basis der Objektsegmentierung, um reproduzierbare und vergleichbare Messergebnisse zu erzielen.
 
 
-![USAF Target](Masterarbeit/USAFTarget.png)
+![USAF Target](Masterarbeit/USAFTarget.png)  
 USAF Target für Auflösungstests: Das USAF (United States Air Force) Testbild dient zur Bestimmung der räumlichen Auflösung der Lichtfeldkamera. Dies ist ein kritischer Schritt zur Validierung der Kameraqualität vor den fluiddynamischen Messungen.
 
-![Contour](Masterarbeit/Contour.png)
+![Contour](Masterarbeit/Contour.png)  
 Konturerkennung aller Objekte (blau) mittels cv2.findContours() auf
 das grauskalierte, invertierte Bild mit Schwellenwert.
 
-![Contours](Masterarbeit/Contours.png)
+![Contours](Masterarbeit/Contours.png)  
 Konturenerkennung der Balken untergliedert in Vertikale (rot) und
 Horizontale (grün) durch Ähnlichkeitsbeziehungen wie Fläche, Breite, Höhe und Position.
 
-![ROI](Masterarbeit/ROI.png)
+![ROI](Masterarbeit/ROI.png)  
 Reproduzierbarkeit der Messergebnisse durch ROI, die auf der Breite
 für horizontale Balken und auf der Höhe für vertikale Balken basiert.
 
@@ -92,11 +92,11 @@ Zur Analyse der Foulingkinetik wurde eine vollständig automatisierte Bildverarb
 
 Die Pipeline stellt die Datengrundlage für die strategische Modellierung von Foulingkinetiken dar und ermöglicht die quantitative Analyse des Foulingprozesses.
 
-![Graustufenbild](Bachelorarbeit/Graustufenbild.png)
+![Graustufenbild](Bachelorarbeit/Graustufenbild.png)  
 **Graustufenkonvertierung:** Das ursprüngliche Farbbild wird in ein Graustufenbild konvertiert, um die Datenkomplexität zu reduzieren und die nachfolgende Verarbeitung zu vereinfachen. Diese Konvertierung eliminiert Farbinformationen, die für die Blasenerkennung nicht relevant sind, und reduziert gleichzeitig den Speicherbedarf bei der Verarbeitung von über 1.000 Bildern pro Versuchsreihe.
 
-![Parameteranpassung](Bachelorarbeit/Parameteranpassung.png)
+![Parameteranpassung](Bachelorarbeit/Parameteranpassung.png)  
 **Parameteranpassung:** Visualisierung der Parameteranpassung für die optimale Blasenerkennung. Der Algorithmus ermöglicht die interaktive Anpassung von Verarbeitungsparametern wie Schwellenwerten, Filtergrößen und morphologischen Operationen. Dies ist entscheidend, da sich die Versuchsbedingungen (Beleuchtung, Blasengröße, Hintergrund) zwischen verschiedenen Versuchsreihen ändern können. Die Parameteranpassung stellt sicher, dass die Blasenerkennung unter allen Bedingungen optimal funktioniert.
 
-![Schwarzweißbild](Bachelorarbeit/Schwarzweißbild.png)
+![Schwarzweißbild](Bachelorarbeit/Schwarzweißbild.png)  
 **Binärisierung für Blasenerkennung:** Ergebnis der Schwellenwertoperation zur Erzeugung eines binären (Schwarz-Weiß) Bildes. Dieses binäre Bild dient als Grundlage für die nachfolgende Analyse der Blaseneigenschaften (Anzahl, Größe, Position, Bedeckungsgrad).
